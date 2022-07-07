@@ -1,0 +1,13 @@
+.lwp-toasts {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+}
+.lwp-toasts p {
+  display: block;
+  background: #5e9380;
+  margin: 12px 0 0;
+  padding: 12px 15px;
+  border-radius: 13px;
+  font-size: 14px;
+}

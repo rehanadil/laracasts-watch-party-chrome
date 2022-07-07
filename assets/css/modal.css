@@ -1,0 +1,63 @@
+.lwp-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  transition: all 300ms;
+  z-index: 996;
+}
+
+.lwp-modal input,
+.lwp-modal button {
+  background-color: #141d34;
+  color: #8b90a0;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  padding: 12px 15px;
+  margin: 0 3px;
+  font-size: 16px;
+}
+
+.lwp-modal button {
+  transition: all 200ms;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.lwp-modal button.blue:hover,
+.lwp-modal button.blued {
+  background-color: var(--green-dark);
+}
+
+.lwp-modal button.green:hover,
+.lwp-modal button.greened {
+  background-color: var(--green-dark);
+}
+
+.lwp-modal button.yellow:hover,
+.lwp-modal button.yellowed {
+  background-color: var(--yellow-dark);
+}
+
+.lwp-modal button.orange:hover,
+.lwp-modal button.oranged {
+  background-color: var(--orange-dark);
+}
+
+.lwp-modal button.red:hover,
+.lwp-modal button.redd {
+  background-color: var(--red-dark);
+}
+
+.lwp-modal button.pink:hover,
+.lwp-modal button.pinked {
+  background-color: var(--pink-dark);
+}

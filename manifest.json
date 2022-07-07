@@ -1,0 +1,56 @@
+{
+  "name": "Laracasts Watch Party",
+  "version": "1.0.0",
+  "description": "Laracasts Watch Party is a Chrome extension that lets you sync and watch laracasts courses with your friends and colleagues.",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://laracasts.com/*",
+    "https://*.laracasts.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://laracasts.com/*",
+        "https://*.laracasts.com/*"
+      ],
+      "js": [
+        "assets/js/socket.js",
+        "assets/js/player.js",
+        "content.js"
+      ],
+      "css": [
+        "assets/css/colors.css",
+        "assets/css/button.css",
+        "assets/css/modal.css"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/html/btn-dropdown.html",
+        "assets/html/btn-connecting.html",
+        "assets/html/btn-leave-party.html",
+        "assets/html/join-modal.html",
+        "assets/html/host-modal.html"
+      ],
+      "matches": [
+        "https://laracasts.com/*",
+        "https://*.laracasts.com/*"
+      ]
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "assets/icons/popup.jpg",
+      "24": "assets/icons/popup.jpg",
+      "32": "assets/icons/popup.jpg"
+    },
+    "default_title": "Laracasts Watch Party",
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 3
+}

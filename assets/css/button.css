@@ -1,0 +1,162 @@
+.fa-solid {
+  margin-right: 7px;
+}
+
+.lwp-button {
+  position: fixed;
+  top: 10px;
+  left: 30%;
+  z-index: 995;
+  width: 160px;
+  height: 42px;
+  padding: 0;
+  font-family: "Sen";
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(50, 138, 241, 0.1);
+  color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.01);
+  border-radius: 15px;
+  box-shadow: 3px 3px 30px rgba(118, 96, 168, 0.2);
+  transition: all 300ms;
+}
+
+.lwp-button:hover {
+  border-color: rgba(50, 138, 241, 0.2);
+  box-shadow: 3px 0 30px rgba(158, 136, 207, 0.2);
+  cursor: pointer;
+}
+
+.lwp-button:hover ul li {
+  display: block;
+}
+
+.lwp-button ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  padding: 0;
+  margin: 0;
+}
+
+.lwp-button ul li {
+  display: none;
+  color: #fff;
+  background-color: #34495e;
+  padding: 10px 20px;
+  font-size: 16px;
+  opacity: 0;
+  transition: all 250ms;
+}
+
+.lwp-button ul li:hover {
+  background-color: var(--blue-dark);
+}
+.lwp-button ul li.green:hover {
+  background-color: var(--green-dark);
+}
+.lwp-button ul li.yellow:hover {
+  background-color: var(--yellow-dark);
+}
+.lwp-button ul li.orange:hover {
+  background-color: var(--orange-dark);
+}
+.lwp-button ul li.red:hover {
+  background-color: var(--red-dark);
+}
+.lwp-button ul li.pink:hover {
+  background-color: var(--pink-dark);
+}
+
+.lwp-button ul li:first-child {
+  transform-origin: top center;
+  animation: scaleZ 300ms 60ms ease-in-out forwards;
+  border-radius: 15px 15px 0 0;
+}
+
+.lwp-button ul li:nth-child(2) {
+  transform-origin: top center;
+  animation: scaleZ 300ms 120ms ease-in-out forwards;
+}
+
+.lwp-button ul li:nth-child(3) {
+  transform-origin: top center;
+  animation: scaleZ 300ms 180ms ease-in-out forwards;
+}
+
+.lwp-button ul li:nth-child(4) {
+  transform-origin: top center;
+  animation: scaleZ 300ms 240ms ease-in-out forwards;
+}
+
+.lwp-button ul li:nth-child(5) {
+  transform-origin: top center;
+  animation: scaleZ 300ms 300ms ease-in-out forwards;
+}
+
+.lwp-button ul li:last-child {
+  border-radius: 0 0 15px 15px;
+}
+
+.lwp-btn-green {
+  background-color: var(--green-light);
+}
+.lwp-btn-green:hover {
+  background-color: var(--green-dark);
+}
+
+.lwp-btn-yellow {
+  background-color: var(--yellow-light);
+}
+.lwp-btn-yellow:hover {
+  background-color: var(--yellow-dark);
+}
+
+.lwp-btn-orange {
+  background-color: var(--orange-light);
+}
+.lwp-btn-orange:hover {
+  background-color: var(--orange-dark);
+}
+
+.lwp-btn-red {
+  background-color: var(--red-light);
+}
+.lwp-btn-red:hover {
+  background-color: var(--red-dark);
+}
+
+.lwp-btn-pink {
+  background-color: var(--pink-light);
+}
+.lwp-btn-pink:hover {
+  background-color: var(--pink-dark);
+}
+
+#btn-leave-party,
+#btn-connecting {
+  display: none;
+}
+#btn-connecting {
+  cursor: not-allowed;
+}
+
+@keyframes scaleZ {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  80% {
+    transform: scale(1.07);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
